@@ -13,21 +13,24 @@ export function TecnicalSkills() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    gsap.fromTo(
-      textRef.current,
-      { xPercent: 0 },
-      {
-        xPercent: -120,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 0",
-          end: "top -100%",
-          scrub: 1,
-          pin: true,
-        },
-      }
-    );
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        textRef.current,
+        { xPercent: 0 },
+        {
+          xPercent: -120,
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 0",
+            end: "top -100%",
+            scrub: 1,
+            pin: true,
+          },
+        }
+      );
+    });
+    return () => ctx.revert();
   }, []);
 
   return (
