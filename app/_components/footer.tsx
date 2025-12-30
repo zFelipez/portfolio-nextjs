@@ -27,8 +27,8 @@ export function Footer() {
        <div className="flex items-center gap-2 text-blue-tech  w-full">
         <div className="flex items-center gap-2 flex-1 pl-10 "><p className=" max-sm:text- max-md:text-base text-xl">© 2025</p></div>
         <div className="flex items-center gap-2 flex-2  max-sm:text-xl text-2xl justify-end pr-10">
-          <Link className= ' hover:text-gold transition-all duration-100' href="https://www.linkedin.com/in/felipe-silva-lima/" target="_blank"><FaLinkedin/></Link>
-          <Link className= ' hover:text-gold transition-all duration-100' href="https://github.com/felipe-silva-lima" target="_blank"><FaGithub/></Link>
+          <Link className= ' hover:text-gold transition-all duration-100' href="https://www.linkedin.com/in/felipe-da-silva-lima-680096349/" target="_blank"><FaLinkedin/></Link>
+          <Link className= ' hover:text-gold transition-all duration-100' href="https://github.com/zFelipez" target="_blank"><FaGithub/></Link>
           <DownloadCVButton/>
         </div>
 
