@@ -28,7 +28,7 @@ export default function RootLayout({
         <Menu />
 
         
-        <main className="flex-1 w-full">
+        <main className="flex-1 w-full ">
           {children}
         </main>
 

@@ -46,34 +46,22 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   min-height: 100%;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
   font-family: var(--font-eb-garamond);
 }
+
 @theme {
-  --color-background: #0D1117;
-  --color-gold: #D4AF37;
-  --color-blue-tech: #58A6FF;
-  --color-text-primary: #E6E6E6;
-  --color-text-secondary: #C9D1D9;
-  --color-divider: #30363D;
+  --color-background: #0d1117;
+  --color-gold: #d4af37;
+  --color-blue-tech: #58a6ff;
+  --color-text-primary: #e6e6e6;
+  --color-text-secondary: #c9d1d9;
+  --color-divider: #30363d;
 }
 
 :root {
@@ -154,12 +142,9 @@ body {
   }
 }
 
-
-@layer utilities{
-
-  .scrollbar{
+@layer utilities {
+  .scrollbar {
     scrollbar-width: thin;
     scrollbar-color: var(--color-blue-tech) transparent;
-    
   }
 }
