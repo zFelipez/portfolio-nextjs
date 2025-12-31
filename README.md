@@ -1,3 +1,6 @@
+Projeto de Portifolio pessoal em desenvolvimento. 
+
+
 ## 📐 Planejamento do Projeto
 
 O planejamento (diagramas ER, fluxos e ideias iniciais) está disponível no Miro:
