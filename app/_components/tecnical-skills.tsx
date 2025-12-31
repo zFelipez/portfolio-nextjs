@@ -22,7 +22,7 @@ export function TecnicalSkills() {
           ease: "none",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 0",
+            start: "top 5%",
             end: "top -100%",
             scrub: 1,
             pin: true,
