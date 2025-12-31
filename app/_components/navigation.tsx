@@ -99,24 +99,21 @@ export function Navigation({ data }: NavigationProps) {
               Projetos
             </NavigationMenuTrigger>
             <NavigationMenuContent className="bg-background">
-              <ul className="grid gap-2 sm:w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ul className="flex flex-col gap-4  w-[300px] ">
+                <div className=" w-full  text-center text-secondary">
+                  <h2> Projetos mais recentes </h2>
+                </div>
                 {data.map((item) => (
-                  <ListItem
-                    key={item.id}
-                    title={item.name}
-                    href={"/projects/all"}
-                  >
-                    {item.description}
-                  </ListItem>
+                  <div key={item.id} className=" w-full h-10 flex gap-12  ">
+                    <ListItem title={item.name} href={"/projects/all"}></ListItem>
+                    <p className="w-[200px] max-w-[200px] h-12 overflow-y-auto scrollbar text-blue-tech">{item.description}</p>
+                  </div>
                 ))}
-                <ListItem
-                    key={4}
-                    title='Veja mais projetos'
-                    href={"/projects/all"}
-                    className="h-max"
-                  >
-                    
-                  </ListItem>
+
+                <div className=" w-full h-10  text-center bg-accent-foreground">
+                
+                   <ListItem className="w-full h-10 " title={'Veja mais Projetos'} href={"/projects/all"}></ListItem>
+                </div>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
