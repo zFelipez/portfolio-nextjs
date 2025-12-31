@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SkillsCarousel } from "./skills-carousel";
 import { DownloadCVButton } from "./download-cv-button";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 export function SocialMedia() {
@@ -52,16 +53,18 @@ export function SocialMedia() {
 
         <div className="flex  align-center justify-center gap-10 text-4xl  ">
           <div ref={linkedinRef}>
-            <FaLinkedin
-              size={50}
-              className="hover:text-blue-tech hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer"
-            />
+            <div className="hover:text-blue-tech hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer">
+              <Link href="https://www.linkedin.com/in/felipe-da-silva-lima-680096349" target="_blank">
+                <FaLinkedin size={50} />
+              </Link>
+            </div>
           </div>
           <div ref={githubRef}>
-            <FaGithub
-              size={50}
-              className="hover:text-gold hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer"
-            />
+            <div className="hover:text-gold hover:scale-120 transition-all duration-300 ease-in-out cursor-pointer">
+              <Link href="https://github.com/zFelipez" target="_blank">
+                <FaGithub size={50} />
+              </Link>
+            </div>
           </div>
         </div>
         <SkillsCarousel></SkillsCarousel>
