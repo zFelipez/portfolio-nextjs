@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       <body
-        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col`}
+        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col bg-gradient-to-br from-background via-[#0F172A] to-blue-tech font-sans dark:bg-black`}
       >
     
 

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
- 
- 
 import { Menu } from "../_components/menu";
 import { Footer } from "../_components/footer";
 
@@ -15,14 +13,12 @@ export default function PublicLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="h-full">
-      <body className={` `}>
-        <Menu />
+    <>
+      <Menu />
 
-        <main className="flex-1 w-full ">{children}</main>
+      <main className="flex-1 w-full ">{children}</main>
 
-        <Footer />
-      </body>
-    </html>
+      <Footer />
+    </>
   );
 }
