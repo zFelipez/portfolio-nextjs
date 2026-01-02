@@ -25,14 +25,14 @@ export default function RootLayout({
       <body
         className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Menu />
+    
 
         
         <main className="flex-1 w-full ">
           {children}
         </main>
 
-        <Footer /> 
+      
         
       </body>
     </html>
