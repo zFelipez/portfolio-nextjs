@@ -2,8 +2,7 @@ import type { Metadata } from "next";
  
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
-import { Menu } from "./_components/menu";
-import { Footer } from "./_components/footer";
+ 
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],

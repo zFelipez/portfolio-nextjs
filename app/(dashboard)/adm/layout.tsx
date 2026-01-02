@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DashboardMenu } from "./_components/dashboard-menu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,9 +11,9 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
- 
-     
-        <main className="flex-1 w-full ">{children}</main>
-     
+    <>
+      <DashboardMenu></DashboardMenu>
+      <main className="flex-1 w-full ">{children}</main>;
+    </>
   );
 }
