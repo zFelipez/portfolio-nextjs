@@ -19,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="h-full">
+    <html lang="pt-BR" className="h-full  scrollbar ">
       <body
-        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col  `}
+        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col`}
       >
         <div className="flex-1 w-full  flex flex-col  h-full ">{children}</div>
       </body>
