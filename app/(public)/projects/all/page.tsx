@@ -1,6 +1,6 @@
 import { SkillsCarousel } from "@/app/_components/skills-carousel";
 import { ProjectSection } from "../_components/project-section";
-import { Footer } from "@/app/_components/footer";
+ 
 
 
 
