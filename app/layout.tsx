@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
- 
+
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
- 
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -22,17 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       <body
-        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col bg-gradient-to-br from-background via-[#0F172A] to-blue-tech font-sans dark:bg-black`}
+        className={`${ebGaramond.variable} antialiased min-h-screen flex flex-col  `}
       >
-    
-
-        
-        <main className="flex-1 w-full ">
-          {children}
-        </main>
-
-      
-        
+        <div className="flex-1 w-full  flex flex-col  h-full ">{children}</div>
       </body>
     </html>
   );

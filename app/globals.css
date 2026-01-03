@@ -147,4 +147,23 @@ body {
     scrollbar-width: thin;
     scrollbar-color: var(--color-blue-tech) transparent;
   }
+
+  .page-pattern {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    font-family: 'EB Garamond', system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+
+  .page-bg {
+    background: linear-gradient(
+      to bottom right,
+      var(--color-background),
+      #0f172a,
+      var(--color-blue-tech)
+    );
+  }
 }

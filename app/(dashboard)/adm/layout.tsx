@@ -11,9 +11,11 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <DashboardMenu></DashboardMenu>
-      <main className="flex-1 w-full ">{children}</main>;
-    </>
+    <div className="flex flex-col flex-1 w-full page-bg ">
+      <DashboardMenu />
+      <main className="flex-1 w-full ">
+        {children}
+      </main>
+    </div>
   );
 }

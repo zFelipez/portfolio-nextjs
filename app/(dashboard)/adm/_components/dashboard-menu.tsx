@@ -10,7 +10,7 @@ export function DashboardMenu() {
   const [secondBtnDisabled, setSecondBtnDisabled] = useState(false);
 
   return (
-    <section className="flex  gap-[5%] items-center justify-center p-5">
+    <nav className="flex w-full gap-2 items-center justify-center p-5">
       <Button
         onClick={() =>
           setFirstBtnDisabled((prev) => {
@@ -18,7 +18,7 @@ export function DashboardMenu() {
               setSecondBtnDisabled(false);
               setAdmBtnDisabled(false);
               return !prev;
-            }
+              }
             return !prev;
           })
         }
@@ -66,6 +66,6 @@ export function DashboardMenu() {
           Personal Info Settings
         </DashboardLink>
       </Button>
-    </section>
+    </nav>
   );
 }
